@@ -1,0 +1,39 @@
+.home-page {
+    padding: 2rem 0;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .posts-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  @media (min-width: 768px) {
+    .posts-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .posts-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .loading-message {
+    text-align: center;
+    padding: 2rem;
+    color: #4b5563;
+  }
+  
+  .error-message {
+    text-align: center;
+    padding: 2rem;
+    color: #ef4444;
+  }
